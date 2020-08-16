@@ -93,5 +93,27 @@ MariaDB> EXIT
 ```
 ![](8.png)
 
+listo, ya quedó nuestra base de datos configurada. 
 
+ya tenemos todo listo 
 
+ahora solo tenemos que crear el servidor para alojar nuesto wordpress y seguir con las configuraciones. para montar el servidor en este ejemplo usaremos phpp.
+
+PHP nos permite usar nuetra terminal como un servidor simple: 
+
+`php -S 0.0.0.0:8081`
+
+nos alojaremos dentro de la carpeta wordpress y ejecutamos el comando anterior para alojar nuestro wordpress en el localhost usando el puerto 8081
+
+![](12.png)
+
+como pueden ver, ya tenemos nuestro wordpress en nuestro localhost, para seguir con las configuraciones seleccionamos nuesto idioma:
+
+ahora solo necesitamos llenar la informacion con la que elegimos anteriormente al llenar nuesta base de datos:
+
+![](15.png)
+![](16.png)
+
+seguimos los pasos, y despues iniciamos sesion con nuestros datos y listo! ya tenemos WORDPRESS en nuesto android 
+
+![](17.png)
