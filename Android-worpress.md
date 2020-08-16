@@ -28,4 +28,4 @@ https://play.google.com/store/apps/details?id=com.termux&hl=es_MX
 
 Al iniciar la aplicacion por primera vez tardará un poco pero no se preocupen, es normal 
 
-https://media.githubusercontent.com/media/Y000o/termux-wordpress/1.png
+![](1.png)
