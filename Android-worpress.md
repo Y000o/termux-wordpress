@@ -35,5 +35,30 @@ Que es simplemente la terminal que se ha iniciado y nos da la bienvenia.
 
 Ahora vamos a actualizar nuestra terminal y vamos a instalar las herramientas que necesitaremos para poder instalar wordpress
 
-lo primero que tenemos que hacer es ejecutal los siguientes comandos:
+lo primero que tenemos que hacer es ejecutal los siguientes comandos que nos servirán para actualizar nuesta terminal :
+
 `pkg update && pkg upgrade`
+
+una vez actualizada nuestra terminal vamos a instalar las herramientas necesarias:
+
+`apt install mariadb php vim wget -y` 
+
+![](2.png)
+
+ahora vamos a ver por partes lo que estamos haciendo:
+
+con apt install le estamos diciendo a nuestra terminal que queremos instalar algunas herramientas las cuales se estan especificando,
+tenemos mariadb que es la base de datos que vamos a utilizar, tenemos php que lo utilizaremos para crear el servidor, vim como editor de texto y
+por ultimo wget para descargar archivos de internet.
+
+una vez instaladas las herramientas vamos a descargar wordpress
+
+utilizamos el sigiente comando para descargar la ultima version de wordpress: `wget https://wordpress.org/latest.tar.gz`
+
+cuando temine la descarga nos aparecera un archivo llamado: latest.tar.gz lo que significa que el archivo esta compimido y tenemos que descomprimir
+para poder ver el contenido, como es un archivo tar usarémos este comando: `tar xvzf latest.tar.gz`
+
+al terminal nos aparecerá la carpeta llamada wordpress
+
+![](3.png)
+
