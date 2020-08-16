@@ -62,3 +62,36 @@ al terminal nos aparecerá la carpeta llamada wordpress
 
 ![](3.png)
 
+Una cosa muy importante que tenemos que hacer es crear nuestra base de datos "wordpress", para crearla vamos a usar lo siguiente:
+
+vamos a ejecutar el siguiente comando para iniciar el servicio de mariadb: `mysqld`
+ 
+una vez ejecutado nos aparecerá algo como esto:
+
+![](4.png)
+
+lo que significa que ya se esta ejecutando el servicio de mariadb. lo que sigue es crear una nueva sesion en nuetro termux, lo cual se hace arrastrando la pantalla hacia la derecha, y nos pararecerá un menú el cual nos permite crear mas sesiones:
+
+![](5.png)
+
+En la nueva sesion ejecutamos el comando: `mysql` para entrar al entorno de mariadb y seguir con el procedimiento.
+
+![](6.png)
+
+podemos ver las bases de datos que vienen por defecto con el comando: `show databases;`
+
+![](7.png)
+
+Ahora utilizaremos los siguentes comandos para crear nuestra base de datos y otorgarle permisos para trabajar.
+
+RECUERDEN CAMBIAR EL USUARIO Y CONTRASEÑA
+```
+MariaDB> CREATE DATABASE wordpress;
+MariaDB> GRANT ALL PRIVILEGES ON wordpress.* TO "wp-user"@"localhost" IDENTIFIED BY "contraseña";
+MariaDB> FLUSH PRIVILEGES;
+MariaDB> EXIT
+```
+![](8.png)
+
+
+
